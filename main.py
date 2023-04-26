@@ -173,7 +173,7 @@ def make_post():
 
 
 
-# @app.route('/vote', methods=['PUT'])
+@app.route('/vote', methods=['PUT'])
 def election_voting():
     record = json.loads(request.data)
 
@@ -243,7 +243,7 @@ def login_profile():
 
 
 
-# app.run(debug=True)
+app.run(debug=True)
 
 
 
